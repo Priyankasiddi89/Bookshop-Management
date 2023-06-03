@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Welcome!"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp" />
+    <TextView
+        android:id="@+id/select1"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Select Book"
+        android:textFontWeight="@integer/material_motion_duration_medium_1"
+        android:textSize="20sp" />
+    <RadioGroup
+        android:layout_below="@id/select1"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/books2"
+            android:src="@drawable/bo1"
+            android:layout_centerHorizontal="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wings of Fire"
+            android:checked="true"
+            android:onClick="checkButton"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/books3"
+            android:src="@drawable/bo2"
+            android:layout_centerHorizontal="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inspired Talks"
+            android:onClick="checkButton"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/books4"
+            android:src="@drawable/bo3"
+            android:layout_centerHorizontal="true"/>
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Story of Shakuntala"
+            android:onClick="checkButton"/>
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/text_view_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_selected"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Buy" />
+
+    <Button
+        android:id="@+id/button_apply2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_apply"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Give Feedback" />
+
+
+</RelativeLayout>
